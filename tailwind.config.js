@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				manrope: ['Manrope', 'sans-serif']
+				roboto: ['Roboto', 'sans-serif']
 			},
 			colors: {
 				'dark-orange': '#D87D4A',
