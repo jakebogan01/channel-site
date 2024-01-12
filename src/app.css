@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+	background-color: #e9edf6;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height: 100svh;
+}
+
+/* *,
+*::before,
+*::after {
+	scrollbar-width: 0px !important;
+	scrollbar-color: #2c2d2d;
+}
+::-webkit-scrollbar {
+	width: 0px !important;
+	background-color: #2c2d2d;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	background: #2c2d2d;
+	border: 0px solid #2c2d2d;
+} */
