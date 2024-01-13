@@ -10,6 +10,7 @@
      console.log($links)
 </script>
 
+<!--Mobile Nav-->
 <div class="relative z-50 xl:hidden" role="dialog" aria-modal="true">
      <div class="fixed inset-0 bg-gray-900/80"></div>
      <div class="fixed inset-0 flex">
@@ -164,6 +165,7 @@
      </div>
 </div>
 
+<!--Desktop Nav-->
 <div class="hidden xl:fixed xl:inset-y-0 xl:z-50 xl:flex xl:w-[22rem] xl:flex-col bg-[#4A5863]">
      <div class="flex grow flex-col overflow-y-auto bg-black/10 ring-1 ring-white/5">
           <div class="flex justify-center h-16 shrink-0 items-center bg-[#09232E]">
@@ -307,28 +309,149 @@
      </div>
 </div>
 
+<!--Main section-->
 <div class="xl:pl-[22rem]">
      <div class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-6 bg-white px-4 sm:px-6 lg:px-8">
           <button type="button" class="-m-2.5 p-2.5 text-white xl:hidden">
                <span class="sr-only">Open sidebar</span>
-               <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-               <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
-               </svg>
+               <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" /></svg>
           </button>
           <div class="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
                <form class="flex flex-1">
                     <label for="search-field" class="sr-only">Search</label>
-                    <div class="relative w-full">
-                         <svg class="pointer-events-none absolute inset-y-0 left-0 h-full w-5 text-[#A4A4A4]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                              <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
-                         </svg>
+                    <div class="relative flex items-center w-full">
+                         <svg class="pointer-events-none absolute inset-y-0 left-0 h-full w-5 text-[#A4A4A4]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" /></svg>
                          <input id="search-field" class="block h-full w-full border-0 bg-transparent py-0 pl-8 pr-0 text-[#667979] focus:ring-0 sm:text-sm placeholder-[#A4A4A4]" placeholder="Search..." type="search" name="search">
+                         <a href="/">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#726E6E] hover:text-black"><path fill-rule="evenodd" d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z" clip-rule="evenodd" /></svg>                            
+                         </a>
                     </div>
                </form>
           </div>
      </div>
-     <main>
-     
-
+     <main class="p-0 xl:p-[50px] transition-all">
+          <header class="bg-[#111827]">
+               <!-- Secondary navigation -->
+               <nav class="flex overflow-x-auto border-b border-white/10 py-4">
+                 <ul role="list" class="flex min-w-full flex-none gap-x-6 px-4 text-sm font-semibold leading-6 text-gray-400 sm:px-6 lg:px-8">
+                   <li>
+                     <a href="#" class="text-indigo-400">Overview</a>
+                   </li>
+                   <li>
+                     <a href="#" class="">Activity</a>
+                   </li>
+                   <li>
+                     <a href="#" class="">Settings</a>
+                   </li>
+                   <li>
+                     <a href="#" class="">Collaborators</a>
+                   </li>
+                   <li>
+                     <a href="#" class="">Notifications</a>
+                   </li>
+                 </ul>
+               </nav>
+       
+               <!-- Heading -->
+               <div class="flex flex-col items-start justify-between gap-x-8 gap-y-4 bg-gray-700/10 px-4 py-4 sm:flex-row sm:items-center sm:px-6 lg:px-8">
+                 <div>
+                   <div class="flex items-center gap-x-3">
+                     <div class="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                       <div class="h-2 w-2 rounded-full bg-current"></div>
+                     </div>
+                     <h1 class="flex gap-x-3 text-base leading-7">
+                       <span class="font-semibold text-white">Planetaria</span>
+                       <span class="text-gray-600">/</span>
+                       <span class="font-semibold text-white">mobile-api</span>
+                     </h1>
+                   </div>
+                   <p class="mt-2 text-xs leading-6 text-gray-400">Deploys from GitHub via main branch</p>
+                 </div>
+                 <div class="order-first flex-none rounded-full bg-indigo-400/10 px-2 py-1 text-xs font-medium text-indigo-400 ring-1 ring-inset ring-indigo-400/30 sm:order-none">Production</div>
+               </div>
+       
+               <!-- Stats -->
+               <div class="grid grid-cols-1 bg-gray-700/10 sm:grid-cols-2 lg:grid-cols-4">
+                 <div class="border-t border-white/5 py-6 px-4 sm:px-6 lg:px-8">
+                   <p class="text-sm font-medium leading-6 text-gray-400">Number of deploys</p>
+                   <p class="mt-2 flex items-baseline gap-x-2">
+                     <span class="text-4xl font-semibold tracking-tight text-white">405</span>
+                   </p>
+                 </div>
+                 <div class="border-t border-white/5 py-6 px-4 sm:px-6 lg:px-8 sm:border-l">
+                   <p class="text-sm font-medium leading-6 text-gray-400">Average deploy time</p>
+                   <p class="mt-2 flex items-baseline gap-x-2">
+                     <span class="text-4xl font-semibold tracking-tight text-white">3.65</span>
+                     <span class="text-sm text-gray-400">mins</span>
+                   </p>
+                 </div>
+                 <div class="border-t border-white/5 py-6 px-4 sm:px-6 lg:px-8 lg:border-l">
+                   <p class="text-sm font-medium leading-6 text-gray-400">Number of servers</p>
+                   <p class="mt-2 flex items-baseline gap-x-2">
+                     <span class="text-4xl font-semibold tracking-tight text-white">3</span>
+                   </p>
+                 </div>
+                 <div class="border-t border-white/5 py-6 px-4 sm:px-6 lg:px-8 sm:border-l">
+                   <p class="text-sm font-medium leading-6 text-gray-400">Success rate</p>
+                   <p class="mt-2 flex items-baseline gap-x-2">
+                     <span class="text-4xl font-semibold tracking-tight text-white">98.5%</span>
+                   </p>
+                 </div>
+               </div>
+             </header>
+       
+             <!-- Activity list -->
+             <div class="border-t border-white/10 pt-11 bg-[#111827]">
+               <h2 class="px-4 text-base font-semibold leading-7 text-white sm:px-6 lg:px-8">Latest activity</h2>
+               <table class="mt-6 w-full whitespace-nowrap text-left">
+                 <colgroup>
+                   <col class="w-full sm:w-4/12">
+                   <col class="lg:w-4/12">
+                   <col class="lg:w-2/12">
+                   <col class="lg:w-1/12">
+                   <col class="lg:w-1/12">
+                 </colgroup>
+                 <thead class="border-b border-white/10 text-sm leading-6 text-white">
+                   <tr>
+                     <th scope="col" class="py-2 pl-4 pr-8 font-semibold sm:pl-6 lg:pl-8">User</th>
+                     <th scope="col" class="hidden py-2 pl-0 pr-8 font-semibold sm:table-cell">Commit</th>
+                     <th scope="col" class="py-2 pl-0 pr-4 text-right font-semibold sm:pr-8 sm:text-left lg:pr-20">Status</th>
+                     <th scope="col" class="hidden py-2 pl-0 pr-8 font-semibold md:table-cell lg:pr-20">Duration</th>
+                     <th scope="col" class="hidden py-2 pl-0 pr-4 text-right font-semibold sm:table-cell sm:pr-6 lg:pr-8">Deployed at</th>
+                   </tr>
+                 </thead>
+                 <tbody class="divide-y divide-white/5">
+                    {#each $links as link, i (link?.id)}
+                         <tr>
+                         <td class="py-4 pl-4 pr-8 sm:pl-6 lg:pl-8">
+                         <div class="flex items-center gap-x-4">
+                         <img src={link?.image} alt="" class="h-8 w-8 rounded-full bg-gray-800">
+                         <div class="truncate text-sm font-medium leading-6 text-white">{link?.title}</div>
+                         </div>
+                         </td>
+                         <td class="hidden py-4 pl-0 pr-4 sm:table-cell sm:pr-8">
+                         <div class="flex gap-x-3">
+                         <div class="font-mono text-sm leading-6 text-gray-400">2d89f0c8</div>
+                         <span class="inline-flex items-center rounded-md bg-gray-400/10 px-2 py-1 text-xs font-medium text-gray-400 ring-1 ring-inset ring-gray-400/20">main</span>
+                         </div>
+                         </td>
+                         <td class="py-4 pl-0 pr-4 text-sm leading-6 sm:pr-8 lg:pr-20">
+                         <div class="flex items-center justify-end gap-x-2 sm:justify-start">
+                         <time class="text-gray-400 sm:hidden" datetime="2023-01-23T11:00">45 minutes ago</time>
+                         <div class="flex-none rounded-full p-1 text-green-400 bg-green-400/10">
+                         <div class="h-1.5 w-1.5 rounded-full bg-current"></div>
+                         </div>
+                         <div class="hidden text-white sm:block">Completed</div>
+                         </div>
+                         </td>
+                         <td class="hidden py-4 pl-0 pr-8 text-sm leading-6 text-gray-400 md:table-cell lg:pr-20">25s</td>
+                         <td class="hidden py-4 pl-0 pr-4 text-right text-sm leading-6 text-gray-400 sm:table-cell sm:pr-6 lg:pr-8">
+                         <time datetime="2023-01-23T11:00">45 minutes ago</time>
+                         </td>
+                         </tr>
+                    {/each}
+                 </tbody>
+               </table>
+             </div>
      </main>
 </div>
