@@ -6,139 +6,139 @@ export const links = persisted('links', [
 		title: 'CRM Login',
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Image'
 	},
 	{
 		id: 2,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'CRM End User Procedure (EUP)',
+		image: '/icons/excel-sheet-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Document'
 	},
 	{
 		id: 3,
-		title: 'CRM Login',
+		title: 'CRM Sales Hub Features How-To',
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Image'
 	},
 	{
 		id: 4,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'CRM Trainings',
+		image: '/icons/pdf-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'PDF'
 	},
 	{
 		id: 5,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'Special Pricing Request (SPR) Form',
+		image: '/icons/form-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'PNY Website'
 	},
 	{
 		id: 6,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'Internal Revision Special Pricing (SPR) Request',
+		image: '/icons/word-doc-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Image'
 	},
 	{
 		id: 7,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'Daily Channel Pricing',
+		image: '/icons/pdf-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'PDF'
 	},
 	{
 		id: 8,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'Quadro Pricing',
+		image: '/icons/pdf-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Document'
 	},
 	{
 		id: 9,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'IGX Pricing',
+		image: '/icons/form-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Document'
 	},
 	{
 		id: 10,
-		title: 'CRM Login',
+		title: 'Quote Entry End User Process (EUP)',
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Form'
 	},
 	{
 		id: 11,
-		title: 'CRM Login',
+		title: 'ProViz Line Card',
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'PNY Website'
 	},
 	{
 		id: 12,
-		title: 'CRM Login',
+		title: 'Data Center Line Card',
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Image'
 	},
 	{
 		id: 13,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'Field Marketing Request Form',
+		image: '/icons/excel-sheet-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'PDF'
 	},
 	{
 		id: 14,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'PNY Partner Healthcare PDF',
+		image: '/icons/word-doc-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'PDF'
 	},
 	{
 		id: 15,
-		title: 'CRM Login',
+		title: 'Event Recap Submission',
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Blog'
 	},
 	{
 		id: 16,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'Where to Buy - Request to Add',
+		image: '/icons/pdf-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Image'
 	},
 	{
 		id: 17,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'MDF Claim Reimbursement Form',
+		image: '/icons/pdf-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Form'
 	},
 	{
 		id: 18,
-		title: 'CRM Login',
+		title: 'Creative Approval (for MDF)',
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Form'
 	},
 	{
 		id: 19,
-		title: 'CRM Login',
+		title: 'EOL Notices (Folder)',
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'Image'
 	},
 	{
 		id: 20,
-		title: 'CRM Login',
-		image: '/icons/sharepoint-icon.svg',
+		title: 'EOL Notices (Portal)',
+		image: '/icons/form-icon.svg',
 		group: 'Sales',
-		type: 'image'
+		type: 'PDF'
 	}
 ]);

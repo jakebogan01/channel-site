@@ -21,7 +21,7 @@
                          <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
                     </button>
                </div>
-               <div class="flex grow flex-col overflow-y-auto bg-black/10 ring-1 ring-white/5">
+               <div class="flex grow flex-col overflow-y-auto ring-1 ring-white/5 bg-[#4A5863]">
                     <div class="flex justify-center h-16 shrink-0 items-center bg-[#09232E]">
                          <img class="h-8 w-auto" src="/logo.svg" alt="Your Company">
                     </div>
@@ -413,41 +413,24 @@
                  </colgroup>
                  <thead class="border-b border-white/10 text-sm leading-6 text-white">
                    <tr>
-                     <th scope="col" class="py-2 pl-4 pr-8 font-semibold sm:pl-6 lg:pl-8">User</th>
-                     <th scope="col" class="hidden py-2 pl-0 pr-8 font-semibold sm:table-cell">Commit</th>
-                     <th scope="col" class="py-2 pl-0 pr-4 text-right font-semibold sm:pr-8 sm:text-left lg:pr-20">Status</th>
-                     <th scope="col" class="hidden py-2 pl-0 pr-8 font-semibold md:table-cell lg:pr-20">Duration</th>
-                     <th scope="col" class="hidden py-2 pl-0 pr-4 text-right font-semibold sm:table-cell sm:pr-6 lg:pr-8">Deployed at</th>
+                     <th scope="col" class="py-2 pl-4 pr-8 lg:w-9/12 font-semibold sm:pl-6 lg:pl-8">Title</th>
+                     <th scope="col" class="hidden py-2 pl-0 pr-8 font-semibold sm:table-cell">Group</th>
+                     <th scope="col" class="py-2 pl-0 pr-4 text-right font-semibold sm:pr-8 sm:text-left lg:pr-20">Type</th>
+                     <th scope="col" class="hidden py-2 pl-8 pr-4 lg:pr-8 font-semibold md:table-cell lg:pl-20 lg:text-right">Save</th>
                    </tr>
                  </thead>
                  <tbody class="divide-y divide-white/5">
                     {#each $links as link, i (link?.id)}
-                         <tr>
-                         <td class="py-4 pl-4 pr-8 sm:pl-6 lg:pl-8">
-                         <div class="flex items-center gap-x-4">
-                         <img src={link?.image} alt="" class="h-8 w-8 rounded-full bg-gray-800">
-                         <div class="truncate text-sm font-medium leading-6 text-white">{link?.title}</div>
-                         </div>
-                         </td>
-                         <td class="hidden py-4 pl-0 pr-4 sm:table-cell sm:pr-8">
-                         <div class="flex gap-x-3">
-                         <div class="font-mono text-sm leading-6 text-gray-400">2d89f0c8</div>
-                         <span class="inline-flex items-center rounded-md bg-gray-400/10 px-2 py-1 text-xs font-medium text-gray-400 ring-1 ring-inset ring-gray-400/20">main</span>
-                         </div>
-                         </td>
-                         <td class="py-4 pl-0 pr-4 text-sm leading-6 sm:pr-8 lg:pr-20">
-                         <div class="flex items-center justify-end gap-x-2 sm:justify-start">
-                         <time class="text-gray-400 sm:hidden" datetime="2023-01-23T11:00">45 minutes ago</time>
-                         <div class="flex-none rounded-full p-1 text-green-400 bg-green-400/10">
-                         <div class="h-1.5 w-1.5 rounded-full bg-current"></div>
-                         </div>
-                         <div class="hidden text-white sm:block">Completed</div>
-                         </div>
-                         </td>
-                         <td class="hidden py-4 pl-0 pr-8 text-sm leading-6 text-gray-400 md:table-cell lg:pr-20">25s</td>
-                         <td class="hidden py-4 pl-0 pr-4 text-right text-sm leading-6 text-gray-400 sm:table-cell sm:pr-6 lg:pr-8">
-                         <time datetime="2023-01-23T11:00">45 minutes ago</time>
-                         </td>
+                         <tr class="{i % 2 === 0 ? 'bg-[#F7FCFF]' : 'bg-white'}">
+                              <td class="py-4 pl-4 pr-8 sm:pl-6 lg:pl-8 lg:w-9/12">
+                                   <a href="#" target="_blank" class="flex items-center gap-x-4">
+                                        <img src={link?.image} alt="" class="h-8 w-8 rounded-full bg-gray-800">
+                                        <div class="truncate text-sm font-medium leading-6 text-gray-400">{link?.title}</div>
+                                   </a>
+                              </td>
+                              <td class="hidden py-4 pl-0 pr-4 text-gray-400 sm:table-cell sm:pr-8">{link?.group}</td>
+                              <td class="py-4 pl-0 pr-4 text-sm leading-6 text-gray-400 sm:pr-8 lg:pr-20">{link?.type}</td>
+                              <td class="hidden py-4 pl-8 text-sm leading-6 text-gray-400 md:table-cell lg:pl-20">25s</td>
                          </tr>
                     {/each}
                  </tbody>
