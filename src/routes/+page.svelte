@@ -413,24 +413,26 @@
                  </colgroup>
                  <thead class="border-b border-white/10 text-sm leading-6 text-white">
                    <tr>
-                     <th scope="col" class="py-2 pl-4 pr-8 lg:w-9/12 font-semibold sm:pl-6 lg:pl-8">Title</th>
-                     <th scope="col" class="hidden py-2 pl-0 pr-8 font-semibold sm:table-cell">Group</th>
-                     <th scope="col" class="py-2 pl-0 pr-4 text-right font-semibold sm:pr-8 sm:text-left lg:pr-20">Type</th>
-                     <th scope="col" class="hidden py-2 pl-8 pr-4 lg:pr-8 font-semibold md:table-cell lg:pl-20 lg:text-right">Save</th>
+                     <th scope="col" class="py-2 pl-4  font-semibold sm:pl-6 lg:pl-8">Title</th>
+                     <th scope="col" class="hidden py-2 text-center font-semibold sm:table-cell">Group</th>
+                     <th scope="col" class="py-2 text-center font-semibold px-12">Type</th>
+                     <th scope="col" class="hidden py-2 font-semibold md:table-cell text-center px-8">Save</th>
                    </tr>
                  </thead>
-                 <tbody class="divide-y divide-white/5">
+                 <tbody>
                     {#each $links as link, i (link?.id)}
-                         <tr class="{i % 2 === 0 ? 'bg-[#F7FCFF]' : 'bg-white'}">
-                              <td class="py-4 pl-4 pr-8 sm:pl-6 lg:pl-8 lg:w-9/12">
+                         <tr class="{i % 2 === 0 ? 'bg-[#F7FCFF]' : 'bg-white'} hover:bg-[#E4EEF4]">
+                              <td class="py-4 pl-4 pr-8 sm:pl-6 lg:pl-8 lg:w-9/12 border border-[#D3DFE0]">
                                    <a href="#" target="_blank" class="flex items-center gap-x-4">
                                         <img src={link?.image} alt="" class="h-8 w-8 rounded-full bg-gray-800">
-                                        <div class="truncate text-sm font-medium leading-6 text-gray-400">{link?.title}</div>
+                                        <div class="truncate text-sm  leading-6 text-gray-400">{link?.title}</div>
                                    </a>
                               </td>
-                              <td class="hidden py-4 pl-0 pr-4 text-gray-400 sm:table-cell sm:pr-8">{link?.group}</td>
-                              <td class="py-4 pl-0 pr-4 text-sm leading-6 text-gray-400 sm:pr-8 lg:pr-20">{link?.type}</td>
-                              <td class="hidden py-4 pl-8 text-sm leading-6 text-gray-400 md:table-cell lg:pl-20">25s</td>
+                              <td class="hidden py-4 text-gray-400 font-light sm:table-cell text-center border border-[#D3DFE0]">{link?.group}</td>
+                              <td class="py-4 text-sm leading-6 text-gray-400 font-light text-center border border-[#D3DFE0]">{link?.type}</td>
+                              <td class="hidden py-4 text-sm leading-6 text-gray-400 md:table-cell text-center border border-[#D3DFE0]">
+                                   <input id="save" aria-describedby="save-description" name="save" type="checkbox" class="h-4 w-4 rounded border-[#CBD4DC] text-[#CBD4DB] focus:ring-[#CBD4DC]">
+                              </td>
                          </tr>
                     {/each}
                  </tbody>
