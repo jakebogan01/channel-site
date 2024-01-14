@@ -1,7 +1,7 @@
 <script>
      import { get } from 'svelte/store'
      import { links } from '../stores/linksStore'
-     import Nav from "$lib/Nav.svelte";
+     import Nav from "$lib/Nav.svelte"
 
      // links.subscribe(...) // subscribe to changes
      // links.update(...) // update value
@@ -9,15 +9,15 @@
      $links // read value with automatic subscription
      console.log($links)
 
-     let filterBy = "Active Programs";
+     let filterBy = "Active Programs"
 
      $: updatedLinks = $links.filter(link => {
           return link.page.includes(filterBy)
      })
 
      const changeFilterText = (e) => {
-          filterBy = e.target.innerText;
-          console.log(filterBy);
+          filterBy = e.target.innerText
+          console.log(filterBy)
      }
 </script>
 
@@ -32,7 +32,7 @@
                          <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
                     </button>
                </div>
-               <Nav on:click={changeFilterText}/>
+               <Nav on:click={changeFilterText} {filterBy}/>
           </div>
      </div>
 </div>
