@@ -15,7 +15,7 @@
           return link.page.includes(filterBy)
      })
 
-     const test = (e) => {
+     const changeFilterText = (e) => {
           filterBy = e.target.innerText;
           console.log(filterBy);
      }
@@ -32,14 +32,14 @@
                          <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
                     </button>
                </div>
-               <Nav />
+               <Nav on:click={changeFilterText}/>
           </div>
      </div>
 </div>
 
 <!--Desktop Nav-->
 <div class="hidden xl:fixed xl:inset-y-0 xl:z-50 xl:flex xl:w-[22rem] xl:flex-col">
-     <Nav on:click={test}/>
+     <Nav on:click={changeFilterText}/>
 </div>
 
 <!--Main section-->
