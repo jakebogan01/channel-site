@@ -6,9 +6,19 @@
      // links.subscribe(...) // subscribe to changes
      // links.update(...) // update value
      // links.set(...) // set value
-     // get(links) // read value
      $links // read value with automatic subscription
      console.log($links)
+
+     let filterBy = "Active Programs";
+
+     $: updatedLinks = $links.filter(link => {
+          return link.page.includes(filterBy)
+     })
+
+     const test = (e) => {
+          filterBy = e.target.innerText;
+          console.log(filterBy);
+     }
 </script>
 
 <!--Mobile Nav-->
@@ -29,7 +39,7 @@
 
 <!--Desktop Nav-->
 <div class="hidden xl:fixed xl:inset-y-0 xl:z-50 xl:flex xl:w-[22rem] xl:flex-col">
-     <Nav />
+     <Nav on:click={test}/>
 </div>
 
 <!--Main section-->
@@ -131,7 +141,7 @@
                          </tr>
                     </thead>
                     <tbody>
-                         {#each $links as link, i (link?.id)}
+                         {#each updatedLinks as link, i (link?.id)}
                               <tr class="{i % 2 === 0 ? 'bg-[#F7FCFF]' : 'bg-white'} hover:bg-[#E4EEF4]">
                                    <td class="py-4 pl-4 pr-8 sm:pl-6 lg:pl-8 lg:w-9/12 border border-[#D3DFE0]">
                                         <a href="#" target="_blank" class="flex items-center gap-x-4">
