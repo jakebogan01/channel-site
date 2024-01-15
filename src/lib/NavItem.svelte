@@ -12,8 +12,8 @@
         category = dataset
     }
 </script>
-<li class="bg-[#09232E]">
-    <button type="button" on:click={SubMenuStatus} bind:this={element} data-category={dataset} class="hover:text-white group flex w-full items-center justify-between gap-x-3 px-8 py-5 leading-6 hover:bg-[#248AB6] {(category === dataset && !close) ? 'text-white bg-[#248AB6]' : 'text-[#A6AAAD] bg-[#4A5863]'}" aria-current="page">
+<li class="relative bg-[#09232E] overflow-hidden">
+    <button type="button" on:click={SubMenuStatus} bind:this={element} data-category={dataset} class="relative hover:text-white group flex w-full items-center justify-between gap-x-3 px-8 py-5 leading-6 hover:bg-[#248AB6] {(category === dataset && !close) ? 'text-white bg-[#248AB6]' : 'text-[#A6AAAD] bg-[#4A5863]'} z-[1]" aria-current="page">
         <slot name="navTitle" />
         {#if (category === dataset && !close)}
             <button type="button" on:click={()=>{close = true; category = undefined}}>
@@ -21,8 +21,8 @@
             </button>
         {/if}
     </button>
-    <ul class="relative bg-[#09232E] border-l-[3px] border-[#194355] ml-[42px] mr-[20px] overflow-hidden {(category === dataset && !close) ? 'pb-[20px] pt-[20px] h-auto' : 'pb-0 pt-0 h-0'}" role="list">
+    <ul class="bg-[#09232E] border-l-[3px] border-[#194355] ml-[42px] mr-[20px] {(category === dataset && !close) ? 'pb-[20px] pt-[20px] h-auto' : 'pb-0 pt-0 h-0'}" role="list">
         <slot />
-        <span class="before:block before:absolute before:-left-0.5 before:bottom-0 before:bg-[#09232E] before:w-[3px] before:h-[30.5px]"></span>
+        <span class="after:absolute after:bottom-0 after:left-0 after:w-[55px] after:h-[34.3px] after:bg-[#09232E] after:z-0"></span>
     </ul>
 </li>
