@@ -1,5 +1,4 @@
 <script>
-     import { get } from 'svelte/store'
      import { links } from '../stores/linksStore'
      import { saved } from "../stores/savedStore"
      import { page } from "$app/stores";
@@ -13,13 +12,6 @@
      import QuickLinks from "$lib/QuickLinks.svelte"
      import PnyBlog from "$lib/PnyBlog.svelte"
      import PageHeader from "$lib/PageHeader.svelte"
-
-     // links.subscribe(...) // subscribe to changes
-     // links.update(...) // update value
-     // links.set(...) // set value
-     // $links // read value with automatic subscription
-     $: console.log("fav", $saved)
-     $: console.log("link", $links)
 
      let filterBy = "crm"
      let showNav = false
