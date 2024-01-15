@@ -34,6 +34,7 @@
      const changeFilterText = (e) => {
           searchField = ""
           filterBy = e.target.innerText.toLowerCase()
+          showNav = false
      }
 
      const updateSearchParams = () => {

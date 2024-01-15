@@ -8,7 +8,7 @@
         <button type="button" on:click={()=>{switchTabs = true}} class="w-full py-2 text-xs font-medium leading-6 transition-colors {!switchTabs ? 'text-white bg-[#75D0E0] hover:bg-[#176182]' : 'text-[#667979] bg-[#F7FCFF]'}">Sales Links</button>
     </div>
     <div class="flex justify-around text-[#2490C9] text-xs">
-        <ul class="pl-2 pr-2 pt-6 leading-relaxed" role="list">
+        <ul class="py-4 pl-2 pr-2 sm:pt-6 leading-relaxed" role="list">
             <li>
                 <a href="#" target="_blank" class="hover:text-blue-500 transition-colors">{switchTabs ? 'Partner Portal' : 'Active Programs'}</a>
             </li>
