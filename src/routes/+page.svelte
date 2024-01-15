@@ -62,7 +62,7 @@
                </form>
           </div>
      </div>
-     <main class="p-0 xl:p-[50px] transition-all">
+     <main class="p-0 xl:p-8 transition-all">
           <header class="bg-[#111827]">
                <div class="grid grid-cols-1 bg-[#F7FCFF] sm:grid-cols-2 lg:grid-cols-3">
                     <div class="flex border-l border-t border-b border-[#D3DFE0]">
