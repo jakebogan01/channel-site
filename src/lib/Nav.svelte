@@ -113,7 +113,7 @@
                                 <span class="sr-only">Favorites</span>
                             </span>
                             {#each $saved as item}
-                                <SubNavItem on:click title={item?.title} active={filterBy === item?.title.toLowerCase()} useLinkIcon={false} />
+                                <SubNavItem on:click id={item?.id} title={item?.title} active={filterBy === item?.title.toLowerCase()} useLinkIcon={false} />
                             {/each}
                         </NavItem>
                     {/if}
