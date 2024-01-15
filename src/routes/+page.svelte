@@ -105,7 +105,7 @@
                               <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
                          </button>
                     </div>
-                    <Nav on:click={changeFilterText} {filterBy}/>
+                    <Nav on:click={changeFilterText} {filterBy} />
                </div>
           </div>
      </div>
@@ -113,7 +113,7 @@
 
 <!--Desktop Nav-->
 <div class="hidden xl:fixed xl:inset-y-0 xl:z-50 xl:flex xl:w-[22rem] xl:flex-col">
-     <Nav on:click={changeFilterText} {filterBy}/>
+     <Nav on:click={changeFilterText} {filterBy} />
 </div>
 
 <!--Main section-->
@@ -125,7 +125,7 @@
           </button>
           <Search on:change={updateSearchParams} on:input={updateSearchField} {searchField} />
      </div>
-     <main class="p-0 xl:p-8 transition-all">
+     <main class="p-0 xl:m-4 transition-all mx-auto max-w-screen-xl">
           <header class="bg-[#111827]">
                <div class="grid grid-cols-1 bg-[#F7FCFF] sm:grid-cols-2 lg:grid-cols-3">
                     <RequestSubmission />
