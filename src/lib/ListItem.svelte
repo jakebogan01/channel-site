@@ -19,7 +19,7 @@
         </td>
     </tr>
 {:else}
-    <tr class="{i % 2 === 0 ? 'bg-[#F7FCFF]' : 'bg-white'} hover:bg-[#E4EEF4]">
+    <tr class="{i % 2 === 0 ? 'bg-[#F7FCFF]' : 'bg-white'} hover:bg-[#E4EEF4] transition-colors">
         <td class="py-4 pl-4 pr-8 sm:pl-6 lg:pl-8 lg:w-9/12 border border-[#D3DFE0]">
             <a href="#" target="_blank" class="flex items-center gap-x-4">
                 <img src={link?.image} alt="" class="h-8 w-8 rounded-full bg-gray-800">
@@ -29,7 +29,7 @@
         <td class="hidden py-4 text-gray-400 font-light md:table-cell px-4 text-center border border-[#D3DFE0]">{link?.group}</td>
         <td class="hidden sm:table-cell py-4 text-sm leading-6 text-gray-400 font-light text-center border border-[#D3DFE0]">{link?.type}</td>
         <td class="py-4 text-sm leading-6 text-gray-400 text-center border border-[#D3DFE0]">
-            <input id="save" on:change aria-describedby="save-description" name="save" type="checkbox" class="h-4 w-4 rounded border-[#CBD4DC] text-[#CBD4DB] focus:ring-[#CBD4DC]" checked={link?.save}>
+            <input id="save" on:change aria-describedby="save-description" name="save" type="checkbox" class="h-4 w-4 rounded border-[#CBD4DC] text-[#CBD4DB] focus:ring-[#CBD4DC] cursor-pointer" checked={link?.save}>
         </td>
     </tr>
 {/if}

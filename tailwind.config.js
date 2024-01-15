@@ -8,6 +8,9 @@ export default {
 			},
 			colors: {},
 			screens: {},
+			transitionProperty: {
+				'spacing': 'margin, padding',
+			}
 		}
 	},
 	plugins: [

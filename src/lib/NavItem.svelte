@@ -13,7 +13,7 @@
     }
 </script>
 <li class="relative bg-[#09232E] overflow-hidden">
-    <button type="button" on:click={SubMenuStatus} bind:this={element} data-category={dataset} class="relative hover:text-white group flex w-full items-center justify-between gap-x-3 px-8 py-5 leading-6 hover:bg-[#248AB6] {(category === dataset && !close || active) ? 'text-white bg-[#248AB6]' : 'text-[#A6AAAD] bg-[#4A5863]'} z-[1]" aria-current="page">
+    <button type="button" on:click={SubMenuStatus} bind:this={element} data-category={dataset} class="relative hover:text-white group flex w-full items-center justify-between gap-x-3 px-8 py-5 leading-6 hover:bg-[#248AB6] {(category === dataset && !close || active) ? 'text-white bg-[#248AB6]' : 'text-[#A6AAAD] bg-[#4A5863]'} z-[1] transition-colors" aria-current="page">
         <slot name="navTitle" />
         {#if (category === dataset && !close || active)}
             <button type="button" on:click={()=>{close = true; category = undefined; active = false}}>

@@ -26,7 +26,7 @@
     <ul class="mt-2 leading-loose text-[#2490C9] text-xs" id="rss-feed-pro-blog" role="list">
         {#each rssFeedPosts as post}
             <li>
-                <a href={post?.link} target="_blank" class="line-clamp-1">{post?.title}</a>
+                <a href={post?.link} target="_blank" class="line-clamp-1 hover:text-blue-500 transition-colors">{post?.title}</a>
             </li>
         {/each}
     </ul>
