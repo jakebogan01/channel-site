@@ -21,8 +21,9 @@
             </button>
         {/if}
     </button>
-    <ul class="bg-[#09232E] border-l-[3px] border-[#194355] ml-[42px] mr-[20px] {(category === dataset && !close || active) ? 'pb-[20px] pt-[20px] h-auto' : 'pb-0 pt-0 h-0'}" role="list">
+    <ul class="bg-[#09232E] border-l-[3px] border-[#194355] ml-[42px] mr-[20px] {(category === dataset && !close || active) ? 'pb-[20px] pt-[20px] h-max' : 'pb-0 pt-0 h-px'} transition-spacing" role="list">
         <slot />
-        <span class="after:absolute after:bottom-0 after:left-0 after:w-[55px] after:h-[34.3px] after:bg-[#09232E] after:z-0"></span>
+        <span class="after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#4a5863] after:z-0"></span>
+        <span class="after:absolute after:bottom-px after:left-0 after:w-[55px] after:h-[33.3px] after:bg-[#09232E] after:z-0"></span>
     </ul>
 </li>

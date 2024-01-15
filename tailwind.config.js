@@ -9,7 +9,7 @@ export default {
 			colors: {},
 			screens: {},
 			transitionProperty: {
-				'spacing': 'margin, padding',
+				'spacing': 'height, width, margin, padding',
 			}
 		}
 	},
