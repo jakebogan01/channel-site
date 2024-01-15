@@ -2,13 +2,13 @@
      import { get } from 'svelte/store'
      import { links } from '../stores/linksStore'
      import Nav from "$lib/Nav.svelte"
-     import ListItem from "$lib/ListItem.svelte";
-     import TableTitles from "$lib/TableTitles.svelte";
-     import Search from "$lib/Search.svelte";
-     import RequestSubmission from "$lib/RequestSubmission.svelte";
-     import QuickLinks from "$lib/QuickLinks.svelte";
-     import PnyBlog from "$lib/PnyBlog.svelte";
-     import PageHeader from "$lib/PageHeader.svelte";
+     import ListItem from "$lib/ListItem.svelte"
+     import TableTitles from "$lib/TableTitles.svelte"
+     import Search from "$lib/Search.svelte"
+     import RequestSubmission from "$lib/RequestSubmission.svelte"
+     import QuickLinks from "$lib/QuickLinks.svelte"
+     import PnyBlog from "$lib/PnyBlog.svelte"
+     import PageHeader from "$lib/PageHeader.svelte"
 
      // links.subscribe(...) // subscribe to changes
      // links.update(...) // update value
@@ -16,16 +16,25 @@
      $links // read value with automatic subscription
      console.log($links)
 
-     let filterBy = "CRM"
+     let filterBy = "crm"
      let showNav = false
+     let searchField = ""
 
      $: updatedLinks = $links.filter(link => {
-          return link.page.includes(filterBy)
+          if (searchField.length > 0) {
+               return link?.title.toLowerCase().includes(searchField.toLowerCase())
+          }
+          return link?.page.toLowerCase().includes(filterBy)
      })
 
      const changeFilterText = (e) => {
-          filterBy = e.target.innerText
+          searchField = ""
+          filterBy = e.target.innerText.toLowerCase()
           console.log(filterBy)
+     }
+
+     const updateSearchField = (e) => {
+          searchField = e.target.value
      }
 </script>
 
@@ -59,7 +68,7 @@
                <span class="sr-only">Open sidebar</span>
                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" /></svg>
           </button>
-          <Search />
+          <Search on:input={updateSearchField} {searchField} />
      </div>
      <main class="p-0 xl:p-8 transition-all">
           <header class="bg-[#111827]">
