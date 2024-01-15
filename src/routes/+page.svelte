@@ -105,7 +105,7 @@
           </header>
 
           <div class="bg-white">
-               <PageHeader {filterBy} {updatedLinks} />
+               <PageHeader {filterBy} {updatedLinks} {searchField} />
                <table class="w-full whitespace-nowrap text-left">
                     <colgroup>
                          <col class="w-full sm:w-4/12">
