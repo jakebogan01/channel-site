@@ -1,6 +1,9 @@
 <script>
      import { get } from 'svelte/store'
      import { links } from '../stores/linksStore'
+     import { page } from "$app/stores";
+     import { goto } from "$app/navigation";
+     import { onMount } from "svelte";
      import Nav from "$lib/Nav.svelte"
      import ListItem from "$lib/ListItem.svelte"
      import TableTitles from "$lib/TableTitles.svelte"
@@ -18,6 +21,13 @@
 
      let filterBy = "crm"
      let showNav = false
+
+     onMount(()=>{
+          resetSearchParams()
+
+          const url = new URL($page.url);
+          searchField = url.searchParams.get('search') || "";
+     })
      let searchField = ""
 
      $: updatedLinks = $links.filter(link => {
@@ -30,11 +40,26 @@
      const changeFilterText = (e) => {
           searchField = ""
           filterBy = e.target.innerText.toLowerCase()
-          console.log(filterBy)
+     }
+
+     const updateSearchParams = () => {
+          if (searchField.length !== 0) {
+               const newUrl = new URL($page.url);
+               newUrl?.searchParams?.set('search', searchField);
+               goto(newUrl);
+          } else {
+               resetSearchParams()
+          }
      }
 
      const updateSearchField = (e) => {
           searchField = e.target.value
+     }
+
+     const resetSearchParams = () => {
+          const newUrl = new URL($page.url);
+          newUrl?.searchParams?.delete('search');
+          goto(newUrl);
      }
 </script>
 
@@ -68,7 +93,7 @@
                <span class="sr-only">Open sidebar</span>
                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" /></svg>
           </button>
-          <Search on:input={updateSearchField} {searchField} />
+          <Search on:change={updateSearchParams} on:input={updateSearchField} {searchField} />
      </div>
      <main class="p-0 xl:p-8 transition-all">
           <header class="bg-[#111827]">
