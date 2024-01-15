@@ -1,6 +1,7 @@
 <script>
      import { get } from 'svelte/store'
      import { links } from '../stores/linksStore'
+     import { saved } from "../stores/savedStore"
      import { page } from "$app/stores";
      import { goto } from "$app/navigation";
      import { onMount } from "svelte";
@@ -16,8 +17,9 @@
      // links.subscribe(...) // subscribe to changes
      // links.update(...) // update value
      // links.set(...) // set value
-     $links // read value with automatic subscription
-     console.log($links)
+     // $links // read value with automatic subscription
+     $: console.log("fav", $saved)
+     $: console.log("link", $links)
 
      let filterBy = "crm"
      let showNav = false
@@ -60,6 +62,34 @@
           const newUrl = new URL($page.url);
           newUrl?.searchParams?.delete('search');
           goto(newUrl);
+     }
+
+     const test = (obj) => {
+          console.log(obj)
+
+          // find the object in the links store and update the save property to true
+            links.update((arr) => {
+                 return arr.map((item) => {
+                        if (item.id === obj.id) {
+                             return {
+                                ...item,
+                                save: !item.save
+                             };
+                        }
+                        return item;
+                 });
+            });
+
+          // update the favorites store with the new object
+            saved.update((arr) => {
+                 // if the object is already in the array, remove it
+                 if (arr.some((item) => item.id === obj.id)) {
+                        return arr.filter((item) => item.id !== obj.id);
+                 } else {
+                        // otherwise, add it
+                        return [...arr, obj];
+                 }
+            });
      }
 </script>
 
@@ -119,7 +149,7 @@
                     </thead>
                     <tbody>
                          {#each updatedLinks as link, i (link?.id)}
-                              <ListItem {link} {i} />
+                              <ListItem on:change={()=>{test(link)}} {link} {i} />
                          {/each}
                     </tbody>
                </table>

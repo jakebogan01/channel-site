@@ -7,7 +7,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'CRM'
+		page: 'CRM',
+		save: false
 	},
 	{
 		id: 2,
@@ -15,7 +16,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Sales',
 		type: 'PDF',
-		page: 'CRM'
+		page: 'CRM',
+		save: false
 	},
 	{
 		id: 3,
@@ -23,7 +25,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Sales',
 		type: 'PDF',
-		page: 'CRM'
+		page: 'CRM',
+		save: false
 	},
 	{
 		id: 4,
@@ -31,7 +34,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
 		type: 'Files',
-		page: 'CRM'
+		page: 'CRM',
+		save: false
 	},
 	{
 		id: 5,
@@ -39,7 +43,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 6,
@@ -47,7 +52,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 7,
@@ -55,7 +61,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 8,
@@ -63,7 +70,8 @@ export const links = persisted('links', [
 		image: '/icons/excel-doc-icon.svg',
 		group: 'Sales',
 		type: 'Sheet',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 9,
@@ -71,7 +79,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 10,
@@ -79,7 +88,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 11,
@@ -87,7 +97,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 12,
@@ -95,7 +106,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 13,
@@ -103,7 +115,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 14,
@@ -111,7 +124,8 @@ export const links = persisted('links', [
 		image: '/icons/excel-doc-icon.svg',
 		group: 'Sales',
 		type: 'Sheet',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 15,
@@ -119,7 +133,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 16,
@@ -127,7 +142,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 17,
@@ -135,7 +151,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 18,
@@ -143,7 +160,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 19,
@@ -151,7 +169,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Sales',
 		type: 'Form',
-		page: 'Forms'
+		page: 'Forms',
+		save: false
 	},
 	{
 		id: 20,
@@ -159,7 +178,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
 		type: 'Files',
-		page: 'Inventory'
+		page: 'Inventory',
+		save: false
 	},
 	{
 		id: 21,
@@ -167,7 +187,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
 		type: 'Files',
-		page: 'Pricing'
+		page: 'Pricing',
+		save: false
 	},
 	{
 		id: 22,
@@ -175,7 +196,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
 		type: 'Files',
-		page: 'Pricing'
+		page: 'Pricing',
+		save: false
 	},
 	{
 		id: 23,
@@ -183,7 +205,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
 		type: 'Files',
-		page: 'Pricing'
+		page: 'Pricing',
+		save: false
 	},
 	{
 		id: 24,
@@ -191,7 +214,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Sales',
 		type: 'Files',
-		page: 'Pricing'
+		page: 'Pricing',
+		save: false
 	},
 	{
 		id: 25,
@@ -199,7 +223,8 @@ export const links = persisted('links', [
 		image: '/icons/excel-doc-icon.svg',
 		group: 'Operations',
 		type: 'Sheet',
-		page: 'Analyst Info'
+		page: 'Analyst Info',
+		save: false
 	},
 	{
 		id: 26,
@@ -207,7 +232,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Operations',
 		type: 'File',
-		page: 'EUPs / Process'
+		page: 'EUPs / Process',
+		save: false
 	},
 	{
 		id: 27,
@@ -215,7 +241,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Operations',
 		type: 'PDF',
-		page: 'EUPs / Process'
+		page: 'EUPs / Process',
+		save: false
 	},
 	{
 		id: 28,
@@ -223,7 +250,8 @@ export const links = persisted('links', [
 		image: '/icons/pny-icon.svg',
 		group: 'Marketing',
 		type: 'Portal',
-		page: 'Active Programs'
+		page: 'Active Programs',
+		save: false
 	},
 	{
 		id: 29,
@@ -231,7 +259,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Collateral'
+		page: 'Collateral',
+		save: false
 	},
 	{
 		id: 30,
@@ -239,7 +268,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Collateral'
+		page: 'Collateral',
+		save: false
 	},
 	{
 		id: 31,
@@ -247,7 +277,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Collateral'
+		page: 'Collateral',
+		save: false
 	},
 	{
 		id: 32,
@@ -255,7 +286,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Collateral'
+		page: 'Collateral',
+		save: false
 	},
 	{
 		id: 33,
@@ -263,7 +295,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Collateral'
+		page: 'Collateral',
+		save: false
 	},
 	{
 		id: 34,
@@ -271,7 +304,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Collateral'
+		page: 'Collateral',
+		save: false
 	},
 	{
 		id: 35,
@@ -279,7 +313,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Collateral'
+		page: 'Collateral',
+		save: false
 	},
 	{
 		id: 36,
@@ -287,7 +322,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Collateral'
+		page: 'Collateral',
+		save: false
 	},
 	{
 		id: 37,
@@ -295,7 +331,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Collateral'
+		page: 'Collateral',
+		save: false
 	},
 	{
 		id: 38,
@@ -303,7 +340,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 39,
@@ -311,7 +349,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 40,
@@ -319,7 +358,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 41,
@@ -327,7 +367,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 42,
@@ -335,7 +376,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 43,
@@ -343,7 +385,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 44,
@@ -351,7 +394,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 45,
@@ -359,7 +403,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 46,
@@ -367,7 +412,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 47,
@@ -375,7 +421,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 48,
@@ -383,7 +430,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 49,
@@ -391,7 +439,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 50,
@@ -399,7 +448,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 51,
@@ -407,7 +457,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 52,
@@ -415,7 +466,8 @@ export const links = persisted('links', [
 		image: '/icons/pdf-icon.svg',
 		group: 'Marketing',
 		type: 'PDF',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 53,
@@ -423,7 +475,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Google Ads'
+		page: 'Google Ads',
+		save: false
 	},
 	{
 		id: 54,
@@ -431,7 +484,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Marketing Processes'
+		page: 'Marketing Processes',
+		save: false
 	},
 	{
 		id: 55,
@@ -439,7 +493,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Marketing',
 		type: 'File',
-		page: 'Marketing Processes'
+		page: 'Marketing Processes',
+		save: false
 	},
 	{
 		id: 56,
@@ -447,7 +502,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Marketing Processes'
+		page: 'Marketing Processes',
+		save: false
 	},
 	{
 		id: 57,
@@ -455,7 +511,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Marketing Processes'
+		page: 'Marketing Processes',
+		save: false
 	},
 	{
 		id: 58,
@@ -463,7 +520,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Marketing Processes'
+		page: 'Marketing Processes',
+		save: false
 	},
 	{
 		id: 59,
@@ -471,7 +529,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'MDF'
+		page: 'MDF',
+		save: false
 	},
 	{
 		id: 60,
@@ -479,7 +538,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'MDF'
+		page: 'MDF',
+		save: false
 	},
 	{
 		id: 61,
@@ -487,7 +547,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'MDF'
+		page: 'MDF',
+		save: false
 	},
 	{
 		id: 62,
@@ -495,7 +556,8 @@ export const links = persisted('links', [
 		image: '/icons/worddoc-icon.svg',
 		group: 'Marketing',
 		type: 'Document',
-		page: 'MDF'
+		page: 'MDF',
+		save: false
 	},
 	{
 		id: 63,
@@ -503,7 +565,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'MDF'
+		page: 'MDF',
+		save: false
 	},
 	{
 		id: 64,
@@ -511,7 +574,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'MDF'
+		page: 'MDF',
+		save: false
 	},
 	{
 		id: 65,
@@ -519,7 +583,8 @@ export const links = persisted('links', [
 		image: '/icons/form-icon.svg',
 		group: 'Marketing',
 		type: 'Form',
-		page: 'Partner Resources'
+		page: 'Partner Resources',
+		save: false
 	},
 	{
 		id: 66,
@@ -527,7 +592,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Marketing',
 		type: 'Files',
-		page: 'Partner Resources'
+		page: 'Partner Resources',
+		save: false
 	},
 	{
 		id: 67,
@@ -535,7 +601,8 @@ export const links = persisted('links', [
 		image: '/icons/pny-icon.svg',
 		group: 'Marketing',
 		type: 'Portal',
-		page: 'Partner Resources'
+		page: 'Partner Resources',
+		save: false
 	},
 	{
 		id: 68,
@@ -543,7 +610,8 @@ export const links = persisted('links', [
 		image: '/icons/powerpoint-icon.svg',
 		group: 'Marketing',
 		type: 'Slides',
-		page: 'Presentations'
+		page: 'Presentations',
+		save: false
 	},
 	{
 		id: 69,
@@ -551,7 +619,8 @@ export const links = persisted('links', [
 		image: '/icons/powerpoint-icon.svg',
 		group: 'Marketing',
 		type: 'Slides',
-		page: 'Presentations'
+		page: 'Presentations',
+		save: false
 	},
 	{
 		id: 70,
@@ -559,7 +628,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Marketing',
 		type: 'Files',
-		page: 'Presentations'
+		page: 'Presentations',
+		save: false
 	},
 	{
 		id: 71,
@@ -567,7 +637,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Marketing',
 		type: 'Files',
-		page: 'Presentations'
+		page: 'Presentations',
+		save: false
 	},
 	{
 		id: 72,
@@ -575,7 +646,8 @@ export const links = persisted('links', [
 		image: '/icons/pny-icon.svg',
 		group: 'Marketing',
 		type: 'Pny Pro',
-		page: 'Training'
+		page: 'Training',
+		save: false
 	},
 	{
 		id: 73,
@@ -583,7 +655,8 @@ export const links = persisted('links', [
 		image: '/icons/pny-icon.svg',
 		group: 'Marketing',
 		type: 'Portal',
-		page: 'Training'
+		page: 'Training',
+		save: false
 	},
 	{
 		id: 74,
@@ -591,7 +664,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Marketing',
 		type: 'Files',
-		page: 'Training'
+		page: 'Training',
+		save: false
 	},
 	{
 		id: 75,
@@ -599,7 +673,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Marketing',
 		type: 'Files',
-		page: 'Training'
+		page: 'Training',
+		save: false
 	},
 	{
 		id: 76,
@@ -607,7 +682,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Marketing',
 		type: 'Files',
-		page: 'Training'
+		page: 'Training',
+		save: false
 	},
 	{
 		id: 77,
@@ -615,7 +691,8 @@ export const links = persisted('links', [
 		image: '/icons/pny-icon.svg',
 		group: 'Product Marketing',
 		type: 'Portal',
-		page: 'EOL'
+		page: 'EOL',
+		save: false
 	},
 	{
 		id: 78,
@@ -623,7 +700,8 @@ export const links = persisted('links', [
 		image: '/icons/sharepoint-icon.svg',
 		group: 'Product Marketing',
 		type: 'Files',
-		page: 'EOL'
+		page: 'EOL',
+		save: false
 	},
 	{
 		id: 79,
