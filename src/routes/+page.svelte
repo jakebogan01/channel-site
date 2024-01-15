@@ -9,7 +9,7 @@
      $links // read value with automatic subscription
      console.log($links)
 
-     let filterBy = "Active Programs"
+     let filterBy = "CRM"
      let showNav = false
 
      $: updatedLinks = $links.filter(link => {
