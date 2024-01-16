@@ -114,7 +114,7 @@
 </div>
 
 <!--Main section-->
-<div class="xl:pl-[22rem] bg-[#e9edf6] h-dvh">
+<div class="xl:pl-[22rem]">
      <div class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-6 bg-white px-4 sm:px-6 lg:px-8">
           <button type="button" on:click={()=>{showNav = true}} class="-m-2.5 p-2.5 xl:hidden text-[#667979]">
                <span class="sr-only">Open sidebar</span>
