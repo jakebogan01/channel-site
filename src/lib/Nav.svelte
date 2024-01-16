@@ -11,9 +11,9 @@
     let sales, operations, marketing, productmarketing, corporatedocs, teambackgrounds, favorites
 </script>
 
-<div class="flex grow flex-col overflow-y-auto ring-1 ring-white/5 bg-[#4A5863]">
+<div class="flex grow flex-col overflow-y-auto ring-1 ring-white/5 bg-[rgb(17,24,39 / 0.8)] xl:bg-[#e9edf6]" style="scrollbar-gutter: stable; ">
     <HeaderLogo />
-    <nav class="flex flex-1 flex-col">
+    <nav class="flex flex-1 flex-col bg-[#4A5863]">
         <ul role="list" class="flex flex-1 flex-col gap-y-7">
             <li>
                 <ul role="list">
