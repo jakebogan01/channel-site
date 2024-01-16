@@ -113,7 +113,7 @@
                                 <span class="sr-only">Favorites</span>
                             </span>
                             {#each $saved as item}
-                                <SubNavItem id={item?.id} title={item?.title} useLinkIcon={true} />
+                                <SubNavItem id={item?.id} title={item?.title} useLinkIcon={true} favoriteList={true} />
                             {/each}
                         </NavItem>
                     {/if}
