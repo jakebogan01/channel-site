@@ -28,12 +28,12 @@
           if (searchField.length > 0) {
                return link?.title.toLowerCase().includes(searchField.toLowerCase())
           }
-          return link?.page.toLowerCase().includes(filterBy)
+          return link?.page.toLowerCase().includes(filterBy.trim().toLowerCase())
      })
 
      const changeFilterText = (e) => {
           searchField = ""
-          filterBy = e.target.innerText.toLowerCase()
+          filterBy = e.target.innerText
           showNav = false
      }
 
