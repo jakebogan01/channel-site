@@ -57,7 +57,7 @@
           goto(newUrl);
      }
 
-     const test = (obj) => {
+     const updateFavoritesList = (obj) => {
           console.log(obj)
 
           // find the object in the links store and update the save property to true
@@ -122,8 +122,8 @@
           </button>
           <Search on:change={updateSearchParams} on:input={updateSearchField} {searchField} />
      </div>
-     <main class="p-0 xl:m-4 transition-all mx-auto max-w-screen-xl">
-          <header class="bg-[#111827]">
+     <main class="flex flex-col justify-center items-center p-0 transition-all xl:m-4">
+          <header class="bg-[#111827] w-full max-w-screen-xl">
                <div class="grid grid-cols-1 bg-[#F7FCFF] sm:grid-cols-2 lg:grid-cols-3">
                     <RequestSubmission />
                     <QuickLinks />
@@ -131,7 +131,7 @@
                </div>
           </header>
 
-          <div class="bg-white">
+          <div class="bg-white w-full max-w-screen-xl">
                <PageHeader {filterBy} {updatedLinks} {searchField} />
                <table class="w-full whitespace-nowrap text-left">
                     <colgroup>
@@ -146,7 +146,7 @@
                     </thead>
                     <tbody>
                          {#each updatedLinks as link, i (link?.id)}
-                              <ListItem on:change={()=>{test(link)}} {link} {i} />
+                              <ListItem on:change={()=>{updateFavoritesList(link)}} {link} {i} />
                          {/each}
                     </tbody>
                </table>

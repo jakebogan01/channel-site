@@ -1,4 +1,5 @@
 <script>
+    import { links } from '../stores/linksStore'
     import { saved } from "../stores/savedStore";
 
     /* svelte-ignore unused-export-let */
@@ -9,6 +10,19 @@
     const deleteItem = () => {
         // delete item from saved store
         saved.update(items => items.filter(item => item.id !== id))
+
+        // update links store to update saved status to false
+        links.update((arr) => {
+            return arr.map((item) => {
+                if (item.id === id) {
+                    return {
+                        ...item,
+                        save: !item.save
+                    };
+                }
+                return item;
+            });
+        });
     }
 </script>
 
