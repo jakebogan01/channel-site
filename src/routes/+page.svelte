@@ -123,13 +123,13 @@
           <Search on:change={updateSearchParams} on:input={updateSearchField} {searchField} />
      </div>
      <main class="flex flex-col justify-center items-center p-0 transition-all xl:m-4">
-          <header class="bg-[#111827] w-full max-w-screen-xl">
+          <!-- <header class="bg-[#111827] w-full max-w-screen-xl">
                <div class="grid grid-cols-1 bg-[#F7FCFF] sm:grid-cols-2 lg:grid-cols-3">
                     <RequestSubmission />
                     <QuickLinks />
                     <PnyBlog />
                </div>
-          </header>
+          </header> -->
 
           <div class="bg-white w-full max-w-screen-xl">
                <PageHeader {filterBy} {updatedLinks} {searchField} />
